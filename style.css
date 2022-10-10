@@ -108,7 +108,8 @@ div.lien:hover li i.bi-chevron-down {
     position: absolute;
     border-radius: 8px;
     padding: 20px !important;
-    height: 80vh;
+    height: 70vh;
+    /* width: 60%; */
     left: -320%;
 }
 
@@ -120,7 +121,7 @@ div.lien:hover li i.bi-chevron-down {
     height: 20px;
     width: 20px;
     transform: rotate(45deg);
-    left: 15px;
+    left: 52px;
     top: 52px;
     border-radius: 3px;
     visibility: hidden;
@@ -477,14 +478,15 @@ img {
 .phone {
     width: 30%;
     height: 550px;
-    border-radius: 50px;
+    border-radius: 10px;
     margin: 20px;
+    object-fit: cover;
 }
 .phone1{
     width:65%;
     height:500px;
-    border-radius: 50px;
-    padding-bottom: 35px;
+    border-radius: 10px;
+    object-fit: cover;
 
 }
 /*--------------------------------------------letecode community-----------------*/
@@ -498,6 +500,7 @@ img {
 
 .studio {
     width: 100%;
+    border-radius: 10px;
 }
 
 .content-img {
@@ -548,7 +551,7 @@ img {
     justify-content: space-between;
     background: black;
     overflow: hidden;
-    height: 404px;
+    height: 500px;
     padding: 16px 16px 16px 60px;
     border-radius: 16px;
 }
@@ -565,15 +568,15 @@ img {
 
 .main-ready {
     display: flex;
-    padding: 100px;
-    margin-left: 70px;
+    padding: 50px;
+    /* margin-left: 70px; */
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
     background-color: rgb(22, 26, 29);
     text-align: center;
     width: 70%;
-    height: 150px;
+    height: 250px;
 }
 
 .title-ready {
@@ -661,11 +664,12 @@ img {
         height: 2px;
         background-color: rgb(255, 255, 255);
     }
-    .bar2{
-        transform: translate(0px, 3px);
-    }
-    .bar1{
-        transform: translate(0px, -3px);
+    #btn-resp{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
     }
 
     .menu-resp {
@@ -697,13 +701,17 @@ img {
         line-height: 16px;
         margin-bottom: 48px;
     }
-    .svgs{
-        display: flex;
-        flex-wrap: wrap;
-    }
+
 }
 
 @media screen and (max-width: 767px) {
+    .menu-responsive{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0,);
+        z-index: 80;
+    }
     .login{
         display: none;
     }
@@ -717,33 +725,22 @@ img {
         padding-right: 20px;
         padding-left: 20px;
     }
-    .cnn{
-        width: 44px;
-    } 
-    #toyota{
-        width: 60px;
+    .d-none{
+        display: none;
     }
-    .rever{
-        height: 95px;
+    .fl-culumn{
+        display: flex;
+        flex-direction: column;
     }
- 
-    .the-new-york-times{
-        width: 125px;
+    .fl-culumn-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
     }
-    .gm{
-        width: 36px;
-    }
-    .instacart{
-        width: 90px;
-    }
-    .strava{
-        width: 80px;
-    }
-    .the-weather-company{
-        width: 47px;
-    }
-    .national-geografic{
-        width: 94px;
+    .wd100{
+        width: 100%;
+        height: max-content !important;
+        margin-top: 20px;
     }
 
 }

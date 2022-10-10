@@ -17,7 +17,7 @@
         <!------------------------------------------partie en-tete------------------------------------------------------------------>
         <header>
             <div class="header-content">
-                <div class="logo"><img src="images\letecode.png" alt="" class="mapbox">
+                <div class="logo"><img src="svg/letecode.svg" alt="" class="mapbox">
                     <p class="lete">Letecode</p>
                 </div>
                 <div class="menu-lien">
@@ -247,19 +247,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="log-sign">
-                    <div>
+                <div class="log-sign ">
+                    <div class="d-none">
                         <a class="login">Se connecter</a>
                         <a class="signup">S'inscrire</a>
                     </div>
 
                     <div class="menu-resp">
-                        <div class="bar-menu bar1"></div>
-                        <div class="bar-menu bar2"></div>
+                        <button id="btn-resp">
+                            <i class="bi bi-list"></i>
+                        </button>
                     </div>
                 </div>
+
             </div>
+
         </header>
+
         <!---------------------------------------------------------------le titre principal------------------------------------------>
         <div class="main-title">
             <h1 class="title-gen">Bienvenue dans la Communauté Letecode</h1>
@@ -311,49 +315,57 @@
         </div>
 
         <!-------------------------------------------letecode------------------------------------->
-        <div class="main-navigation bottom">
+        <div class="main-navigation bottom fl-culumn">
             <div class="content-navigation-text">
                 <h1 class="title-navigation">Letecode</h1>
                 <p class="cheat-gen cheat-nav">
-                    Créé en Février 2020 par <a href="https://cd.linkedin.com/in/jeanclaudembiya/" target="_blank"> Jean Claude Mbiya</a> et 
+                    Créé en Février 2020 par <a href="https://cd.linkedin.com/in/jeanclaudembiya/" target="_blank"> Jean
+                        Claude Mbiya</a> et
                     consulter maintenant par plus de 196 pays dans le monde avec la France en tete du classement,
-                     <a href="https://letecode.com" target="_blank">letecode.com</a> 
-                    est une plateforme d'apprentissage et de partage autour des nouvelles technologies et de 
+                    <a href="https://letecode.com" target="_blank">letecode.com</a>
+                    est une plateforme d'apprentissage et de partage autour des nouvelles technologies et de
                     developpement des logiciels, web, mobile et desktop.
 
                 </p>
                 <p class="cheat-gen cheat-nav">
                     Sur Letecode vous trouverez des contenus sur les
-                  languages de programmation, les informations sur les nouvelles technologieset actualités dans le monde informatique,
-                  des tutoriels sur la programmationweb et autres dans le but d'apprendre, découvrir et s'informer en informatique.
+                    languages de programmation, les informations sur les nouvelles technologieset actualités dans le
+                    monde informatique,
+                    des tutoriels sur la programmationweb et autres dans le but d'apprendre, découvrir et s'informer en
+                    informatique.
                 </p>
-                <a href="https://letecode.com" target="_blank" class="exp">Explorer Letecode <i class="bi bi-arrow-right"></i></a>
+                <a href="https://letecode.com" target="_blank" class="exp">Explorer Letecode <i
+                        class="bi bi-arrow-right"></i></a>
 
             </div>
             <div class="content-navigation">
-                <img class="phone" src="images\letecodeimg1.png" alt="">
-                <img src="images\letecodeimg.png" alt="" class="phone1">
+                <img class="phone d-none" src="images\letecodeimg1.png" alt="">
+                <img src="images\letecodeimg.png" alt="" class="phone1 wd100">
             </div>
         </div>
         <!-----------------------------------------------------------------letecode community----------------------------------->
-        <div class="main-studio bottom">
-            <div class="content-img">
-                <img src="images\community.png" class="studio" alt="">
+        <div class="main-studio bottom fl-culumn-reverse">
+            <div class="content-img wd100">
+                <img src="images\community.png" class="studio wd1000" alt="">
             </div>
 
             <div class="content-navigation-text">
                 <h1 class="title-navigation">Letecode Community</h1>
-                <p class="cheat-gen cheat-nav">Letecode Community est un environment qui réunit des developpeurs seniors, Experts, junior,
-                    apprenants, acteurs des Technologies de l'information et de la communication (NTIC), technophiles 
+                <p class="cheat-gen cheat-nav">Letecode Community est un environment qui réunit des developpeurs
+                    seniors, Experts, junior,
+                    apprenants, acteurs des Technologies de l'information et de la communication (NTIC), technophiles
                     et passionnés du nulerique.
                 </p>
                 <p class="cheat-gen cheat-nav">
-                    Dans ce cadre, la mission est d'encourager les debutants à trouver le bon choix, les bonnes pratiques, 
+                    Dans ce cadre, la mission est d'encourager les debutants à trouver le bon choix, les bonnes
+                    pratiques,
                     des solutions aux blocages, aux bugs et autre orientation.
                 </p>
                 <p class="cheat-gen cheat-nav">
-                    En partageant ce qu'on sait avec les autres, en posant des questions sur nos difficultés, en apprenant 
-                    auprès des autres, nous accordons de la valeur au metier et encourageons les autres à nous rejoindre.
+                    En partageant ce qu'on sait avec les autres, en posant des questions sur nos difficultés, en
+                    apprenant
+                    auprès des autres, nous accordons de la valeur au metier et encourageons les autres à nous
+                    rejoindre.
                 </p>
                 <a href="" class="exp">Nous rejoindre <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -362,10 +374,14 @@
         <div class="main-maps bottom">
             <div class="content-navigation-text maps-bottom">
                 <h1 class="title-navigation">Letecode Academy</h1>
-                <p class="cheat-gen cheat-nav"> Avec Letecode Academy l'objectif est d'aider ceux qui débutent ou qui veulent débuter une carrière dans l'informatique,
-                    à trouver les bonnes réponses et surtout un bon guide pour réussir leur carrière, pour le moment nous sommes orientés vers la formation sur le web , 
-                    mais le but est de couvrir plusieurs domaines web, mobile, Cloud, basique, informatique, management, infographie, science des données et bien plus encore, 
-                    mais beaucoup qu'après avoir installé un centre bien équipé pour permettre aux apprenants de travailler dans un cadre et un environnement appropriés.
+                <p class="cheat-gen cheat-nav"> Avec Letecode Academy l'objectif est d'aider ceux qui débutent ou qui
+                    veulent débuter une carrière dans l'informatique,
+                    à trouver les bonnes réponses et surtout un bon guide pour réussir leur carrière, pour le moment
+                    nous sommes orientés vers la formation sur le web ,
+                    mais le but est de couvrir plusieurs domaines web, mobile, Cloud, basique, informatique, management,
+                    infographie, science des données et bien plus encore,
+                    mais beaucoup qu'après avoir installé un centre bien équipé pour permettre aux apprenants de
+                    travailler dans un cadre et un environnement appropriés.
 
 
                 </p>
@@ -373,20 +389,22 @@
             </div>
 
             <div class="content-navigation">
-                <img src="images\jc.jpg" alt="" class="phone">
-                <img src="images\image7.png" alt="" class="phone1">
+                <img src="images\jc.jpg" alt="" class="phone d-none">
+                <img src="images\image7.png" alt="" class="phone1 wd100">
             </div>
         </div>
 
         <!--------------------------------------------letecode articles------------------------------------------------------------>
 
-        <div class="bottom">
-            <div class="main-straightaway">
+        <div class="bottom ">
+            <div class="main-straightaway fl-culumn">
                 <div class="content-navigation-text straight">
 
                     <h1 class="title-navigation">Articles</h1>
-                    <p class="cheat-gen cheat-nav">Des articles essentiellement conçus pour apprendre, découvrir et s'informer en informatique.</p>
-                    <a href="https//:letecode.com" class="exp">Explorer les artcles Letecode <i class="bi bi-arrow-right"></i></a>
+                    <p class="cheat-gen cheat-nav">Des articles essentiellement conçus pour apprendre, découvrir et
+                        s'informer en informatique.</p>
+                    <a href="https//:letecode.com" class="exp">Explorer les artcles Letecode <i
+                            class="bi bi-arrow-right"></i></a>
                 </div>
                 <div class="content-straigth"><img src="images\image8.png" alt="" class="img-straight"></div>
             </div>
@@ -394,7 +412,8 @@
         <div class="bottom">
             <div class="main-ready">
                 <h1 class="title-navigation title-ready">Prêt à commencer?</h1>
-                <p class="cheat-gen cheat-nav cheat-ready">N'hésitez pas à démarrer une nouvelle discussion ou nous rejoindre</p>
+                <p class="cheat-gen cheat-nav cheat-ready">N'hésitez pas à démarrer une nouvelle discussion ou nous
+                    rejoindre</p>
                 <div class="log-sign">
                     <span class="signup">Nous rejoindre</span>
                     <span class="login login-ready">Démarrer une nouvelle discussion</span>
@@ -417,7 +436,7 @@
                         <a href="" class="link-foot">Php</a>
                         <a href="" class="link-foot">Vue.js</a>
                         <a href="" class="link-foot">MySQL</a>
-                        <a href="" class="link-foot">Git</a>                       
+                        <a href="" class="link-foot">Git</a>
                     </div>
                 </div>
                 <div class="content-foot">
