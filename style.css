@@ -654,7 +654,9 @@ img {
 
 
 
-
+#btn-resp{
+    display: none;
+}
 /* le responsive */
 
 
@@ -670,6 +672,7 @@ img {
         border: none;
         font-size: 2rem;
         cursor: pointer;
+        display: block;
     }
 
     .menu-resp {
