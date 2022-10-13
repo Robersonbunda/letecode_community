@@ -103,14 +103,21 @@ div.lien:hover li i.bi-chevron-down {
     visibility: hidden;
     top: 61px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     border-radius: 8px;
-    padding: 20px !important;
-    height: 70vh;
+    padding: 18px !important;
+    height: 65vh;
     /* width: 60%; */
     left: -320%;
+}
+.icon{
+    transition: .2s;
+}
+.icon:hover{
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 
@@ -150,7 +157,7 @@ div.lien:hover li i.bi-chevron-down {
 }
 
 .main-section {
-    width: 32%;
+    width: 30%;
     position: relative;
 }
 
@@ -241,6 +248,7 @@ p {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
+    animation: slidedown 5s;
 }
 .main-slider{
     width: 840px;
@@ -356,7 +364,18 @@ p {
     font-weight: 700;
     max-width: 656px;
     text-align: center;
+    animation: slidedown 3s;
 
+}
+@keyframes slidedown {
+    from{
+        transform: translateY(-200px) translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .main-title {
@@ -377,6 +396,17 @@ p {
     letter-spacing: -0.01em;
     font-weight: 400;
     text-align: center;
+    animation: sliderigth 3s ;
+}
+@keyframes sliderigth {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .link {
@@ -385,8 +415,18 @@ p {
     font-size: 18px;
     line-height: 24px;
     padding: 12px 20px;
+    animation: slideleft 2.5s;
 }
-
+@keyframes slideleft {
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 
 .slide-img {
