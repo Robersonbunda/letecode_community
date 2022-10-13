@@ -51,7 +51,7 @@ li {
 header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 20;
     backdrop-filter: blur(10px);
 }
 
@@ -107,8 +107,8 @@ div.lien:hover li i.bi-chevron-down {
     align-items: center;
     position: absolute;
     border-radius: 8px;
-    padding: 18px !important;
-    height: 65vh;
+    padding: 20px !important;
+    height: 70vh;
     /* width: 60%; */
     left: -320%;
 }
@@ -248,7 +248,7 @@ p {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    animation: slidedown 5s;
+    background-color: rgb(14, 16, 18);
 }
 .main-slider{
     width: 840px;
@@ -271,12 +271,12 @@ p {
     object-fit: cover;
     transition: all 1s ease;
     top: 0px;
-    left: 45px;
+    left: 50%;
     z-index: -58;
     position: absolute;
     opacity: 0;
     border-radius: 30px;
-
+    transform: translateX(0px) translateY(0px) translateX(-50%) translateX(0px) translateZ(0px);
     
 }
 .active{
@@ -299,7 +299,7 @@ p {
     visibility: visible;
     width: 600px;
     height: 300px;
-    left: 0;
+    left: 25%;
     top: 25%;
     transition: all 1s ease;
     z-index: 40;
@@ -309,8 +309,9 @@ p {
     width: 600px;
     height: 300px;
     top: 25%;
-    transform: translateX(0px) translateY(-25%) translateX(640px) translateZ(-400px);
+    transform: translateX(0px) translateY(-25%) translateX(-50px) translateZ(0px);
     z-index: 2;
+    left: 75%;
     opacity: 0.333333;
     visibility: visible;
     transition: all 1s ease-out;
@@ -384,8 +385,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24px;
-    /* background-color: rgba(14, 16, 18, 0.75); */
 }
 
 .cheat-gen {
@@ -447,7 +446,6 @@ img {
 .svgs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     width: 80%;
     color: rgb(86, 97, 113);
@@ -609,7 +607,7 @@ img {
 .main-ready {
     display: flex;
     padding: 50px;
-    /* margin-left: 70px; */
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
@@ -697,9 +695,60 @@ img {
 #btn-resp{
     display: none;
 }
+.bi-list.ctive{
+    color: black;
+    
+}
+.bi-x{
+    font-size: 2.5rem;
+    
+}
+.btn-resp_position{
+    position: absolute;
+    z-index: 30 !important;
+    left: 17%;
+}
 /* le responsive */
-
-
+.nav_resp{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(14, 16, 18, 0.38);
+    display: flex;
+    justify-content: end !important;
+    align-items: flex-end !important;
+    z-index: 3;
+    top: 0;
+    display: none;
+}
+.visible{
+    display: block;
+    display: flex;
+}
+  
+.content-list{
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+}
+.top{
+    margin-top: 64px !important;
+}
+.link-list{
+display: inline-block; 
+    color: rgb(14, 16, 18);
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: max-content;
+}
+.bi-person-circle, .bi-box-arrow-right, .bi-code, .bi-file-code, .bi-tv, .bi-moon-fill{
+    color: rgb(14, 16, 18);
+    margin-right: 5px;
+}
 @media screen and (max-width: 991px) {
     .bar-menu {
         width: 20px;
@@ -713,18 +762,21 @@ img {
         font-size: 2rem;
         cursor: pointer;
         display: block;
-    }
-
-    .menu-resp {
-        display: flex;
         width: 44px;
         height: 44px;
+        z-index: 100;
+    }
+
+    /* .menu-resp {
+        display: flex;
+        
         margin-left: 8px;
         cursor: pointer;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-    }
+        z-index: 1001;
+    } */
     .log-sign{
         display: flex;
         justify-content: space-between;
@@ -764,6 +816,24 @@ img {
         margin-bottom: 12px;
         max-width: 464px;
     }
+    .active{
+        top: 10%;
+        width: 40% !important;
+        height: 220px !important;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .shadow, .shadow1{
+        height: 180px;
+        z-index: -1;
+    }
+    .shadow{
+        left: 40%;
+    }
+    .shadow1{
+        left: 72%;
+    }
     .link{
         padding-right: 20px;
         padding-left: 20px;
@@ -785,18 +855,20 @@ img {
         height: max-content !important;
         margin-top: 20px;
     }
+    .svg{
+        width: 65px;
+        text-align: right;
+    } 
 
 }
 
 @media screen and (max-width: 479px) {
-    .svg{
-        width: 50%;
-        text-align: right;
-    }    
+   
     .left-svg{
         text-align: left;
     }
     .svgs{
         height: max-content;
+        margin-right: 25px !important;
     }
 }
