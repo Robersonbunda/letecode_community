@@ -1,22 +1,6 @@
-// let lien = document.querySelector('.lien');
-// let bi_chevron = document.querySelector('.bi-chevron-down');
-// let rota = document.querySelector('.main-product')
-// lien.addEventListener('mouseover', (e) => {
-//     rota.style.visibility = 'visible'
-//     bi_chevron.style.display = 'inline-block'
-//     bi_chevron.style.transform = 'rotate(180deg)'
-//     e.stopImmediatePropagation()
-
-// });
-
-// lien.addEventListener('mouseout', (t) => {
-//     rota.style.visibility = 'hidden'
-//     bi_chevron.style.transform = 'rotate(0deg)'
-// });
-
-//     rota.addEventListener('mouseover', () => {
-//         this.style.visibility = 'visible'
-//     });
+let menu = document.querySelector('#btn-resp');
+let nav_resp = document.querySelector('.nav_resp');
+let list = document.querySelector('.menu_resp')
 let img_slide= document.getElementsByClassName('img_slide');
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');
@@ -24,6 +8,21 @@ let evenement = 0;
 let p = 0;
 let q = 0;
 let nbr_img = img_slide.length; 
+
+
+menu.addEventListener('click', ()=>{
+    nav_resp.classList.toggle('visible')
+    list.classList.toggle('ctive')
+    menu.classList.toggle('btn-resp_position')
+    list.classList.toggle('bi-x')
+
+});
+
+
+
+
+
+
 
 function remover() {
     for (let i = 0; i < nbr_img; i++) {
