@@ -447,6 +447,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     width: 80%;
     color: rgb(86, 97, 113);
     margin: 0 auto;
@@ -651,7 +652,9 @@ img {
     line-height: 24px;
     color: rgb(160, 170, 186);
 }
-
+.link-foot:hover{
+    color: rgb(0, 122, 252);
+}
 .main-foots {
     display: flex;
     background-color: rgb(14, 16, 18);
