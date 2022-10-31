@@ -93,7 +93,9 @@ a:hover {
     margin-right: 30px;
     position: relative;
     height: 100%;
+    
 }
+
 
 /*les liens*/
 .lien-product {
@@ -104,6 +106,7 @@ div.lien:hover li i.bi-chevron-down {
     transform: rotate(180deg);
     display: inline-block;
     transition: all .5s;
+    cursor: pointer;
 }
 
 .product-hover {
@@ -674,6 +677,7 @@ img {
     display: flex;
     background-color: rgb(14, 16, 18);
     justify-content: space-between;
+    padding: 0 130px;
 }
 
 .social {
@@ -685,12 +689,14 @@ img {
 .copyright {
     display: flex;
     justify-content: space-between;
+    padding: 40px 130px;
 }
-
 .security {
     display: flex;
 }
-
+address{
+    padding: 0 130px;
+}
 .map-cpr {
     margin-right: 20px;
     font-size: 14px;
@@ -785,6 +791,7 @@ display: inline-block;
 .academy{
     align-items:flex-end;
     width:40%;
+    animation: slidedown 3s;
     
 }
 
@@ -809,7 +816,7 @@ display: inline-block;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #161a1d;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-top: 40px;
 
 }
@@ -831,11 +838,14 @@ display: inline-block;
     font-size: 27px;
 }
 .texte{
-    padding-top: 5px;
-   
+    padding-top: 15px;
+    max-width: 395px;  
+}
+.text{
+    padding-top: 4px;
 }
 .lien{
-  margin: 5px 5px;
+  margin: 3px 5px;
  }
 .inscrire{
     width: 60%;
@@ -977,6 +987,20 @@ display: inline-block;
     width: 60%;
     height: auto;
    }
+   .main-foots{
+    padding: 0;
+   }
+   .copyright{
+    width: 100%;
+    padding: 50px 0;
+   }
+   .mao-cpr{
+    padding: 0;
+   }
+   .sociaux{
+    display: flex;
+    flex-direction: row;
+   }
    .title-ready{
     font-size: 28px;
    }
@@ -985,14 +1009,19 @@ display: inline-block;
    }
    .story{
     width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  align-items: center;
+    flex-wrap: wrap;
     
    }
    .photo{
-    width: 25%;
+    width: 40%;
     padding-top: 15px;
    }
    .identite{
-    padding-left: 5px;
+    padding-bottom:12px;
+    margin: 0;
    }
    .inscrire{
     width: 100%;
@@ -1000,6 +1029,20 @@ display: inline-block;
    }
    .titres{
     width: 100%;
+   }
+   .name{
+    text-align: center;
+   }
+   .texte{
+    min-width: 0;
+    text-align: center;
+   }
+   .text{
+    text-align: center;
+    padding-left: 20px;
+   }
+   .lien{
+    padding:10px 0 0 32px;
    }
    .academy{
     width: 40%;
